@@ -1,0 +1,47 @@
+/* stylelint-disable alpha-value-notation */
+/* stylelint-disable color-function-notation */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital@0;1&family=Poppins&display=swap');
+
+:root {
+  --content-width: 1170px;
+  --container-offset: 16px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // font-family
+  --font-family-primary: "Montserrat", sans-serif;
+  --font-family-secondary: "Nunito", sans-serif;
+  --font-family-accent: "Poppins", sans-serif;
+
+  // font-weight
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  // color
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-dark: #000000c2;
+
+  --color-green-400: #29ce69;
+
+  --color-grey-300: #aaaaaa;
+  --color-grey-400: #898989;
+
+  --color-blue-400: #3685fb;
+  --color-blue-700: #091f3f;
+  --color-blue-800: #030f1f;
+
+  //  radius
+  --radius-main: 50px;
+  --radius-xl: 100px;
+  --radius-l: 24px;
+  --radius-m: 16px;
+  --radius-s: 8px;
+  --radius-xs: 4px;
+  --radius-full: 50%;
+
+  // gradient
+  --gradient-primary: linear-gradient(0deg, #f8f8f8, #f8f8f8), linear-gradient(180deg, rgba(9, 31, 63, 0) 79.24%, #030f1f 86.96%);
+
+}

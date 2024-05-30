@@ -1,0 +1,64 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+h1,
+h2,
+h3 {
+  font-weight: var(--fw-700);
+  line-height: 1.2;
+  color: var(--color-blue-700);
+  overflow: hidden;
+
+  &.bright {
+    color: var(--color-white);
+  }
+}
+
+h1 {
+  font-size: clamp(32px, 4vi, 64px);
+}
+
+h2 {
+  font-size: clamp(26px, 2.8vi, 48px);
+}
+
+h3 {
+  font-size: clamp(20px, 2vi, 32px);
+}
+
+p {
+  line-height: 1.22;
+}
+
+input,
+textarea {
+  font-weight: var(--fw-600);
+  font-size: clamp(20px, 2vi, 24px);
+  line-height: 1.22;
+  letter-spacing: -0.002em;
+  color: var(--color-grey-400);
+
+  &::placeholder {
+    color: var(--color-grey-400);
+    font-weight: var(--fw-500);
+  }
+}
+
+.link {
+  font-weight: var(--fw-500);
+  font-size: 16px;
+  line-height: 1.22;
+  color: var(--color-dark);
+
+  br {
+    display: none;
+  }
+
+  @include media(mobile-m) {
+    line-height: 1.6;
+
+    br {
+      display: block;
+    }
+  }
+}
