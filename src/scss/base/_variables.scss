@@ -4,8 +4,10 @@
 
 :root {
   --content-width: 1170px;
+  --content-large: 1320px;
   --container-offset: 16px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-large: calc(var(--content-large) + (var(--container-offset) * 2));
 
   // font-family
   --font-family-primary: "Montserrat", sans-serif;
