@@ -44,6 +44,7 @@
   --radius-full: 50%;
 
   // gradient
-  --gradient-primary: linear-gradient(0deg, #f8f8f8, #f8f8f8), linear-gradient(180deg, rgba(9, 31, 63, 0) 79.24%, #030f1f 86.96%);
-  --gradient-overlay: linear-gradient(136deg, rgba(255, 255, 255, 0.65) 30%, rgba(74, 153, 33, 0.65) 85%);
+  --gradient-primary: linear-gradient(0deg, rgba(248, 248, 248, 0), rgba(248, 248, 248, 0)), linear-gradient(180deg, rgba(9, 31, 63, 0) 79.24%, #030f1f 86.96%);
+  --gradient-overlay: linear-gradient(136deg, rgba(255, 255, 255, 0.65) 30%, rgba(56, 117, 24, 0.65) 85%);
 }
+

@@ -32,4 +32,18 @@
       color: var(--color-green-400) !important;
     }
   }
+
+  &--desktop {
+    @include media(mobile-l) {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    display: none;
+
+    @include media(mobile-l) {
+      display: block;
+    }
+  }
 }

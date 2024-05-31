@@ -6,7 +6,7 @@ h2,
 h3 {
   font-weight: var(--fw-700);
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.024em;
   color: var(--color-blue-700);
   overflow: hidden;
 
@@ -20,11 +20,11 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(26px, 2.8vi, 48px);
+  font-size: clamp(26px, 3.4vi, 48px);
 }
 
 h3 {
-  font-size: clamp(20px, 2vi, 32px);
+  font-size: clamp(20px, 2.3vi, 32px);
 }
 
 p {
