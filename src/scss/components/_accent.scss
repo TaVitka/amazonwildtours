@@ -40,11 +40,10 @@
     background-color: var(--color-white);
     border-radius: var(--radius-main);
     z-index: 1;
-  }
 
-  &__nav {
-    @include flex-all-sb;
-    gap: 16px;
+    .section__nav {
+      margin-bottom: 0;
+    }
   }
 
   &__content {

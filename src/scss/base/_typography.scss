@@ -13,6 +13,12 @@ h3 {
   &.bright {
     color: var(--color-white);
   }
+
+  @include media(mobile-l) {
+    br {
+      display: none;
+    }
+  }
 }
 
 h1 {
@@ -29,7 +35,7 @@ h3 {
 
 p {
   line-height: 1.22;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.5px;
 }
 
 input,

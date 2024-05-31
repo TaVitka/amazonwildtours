@@ -1,0 +1,28 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.section {
+  padding: clamp(40px, 7vw, 100px) 0;
+
+  &__nav {
+    @include flex-all-sb;
+    gap: 16px;
+    margin-bottom: clamp(40px, 7vw, 100px);
+  }
+
+  &__desc {
+    max-width: 465px;
+    width: 100%;
+  }
+
+  @include media(tablet) {
+    &__nav {
+      flex-direction: column;
+    }
+
+    &__desc {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+}
