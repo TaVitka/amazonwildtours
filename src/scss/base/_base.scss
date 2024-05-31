@@ -63,7 +63,8 @@ body {
 
   @include media(tablet) {
     &::before {
-      background: var(--gradient-primary);
+      background: var(--gradient-overlay);
+      backdrop-filter: blur(2px);
     }
   }
 }
