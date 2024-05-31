@@ -33,6 +33,17 @@
     }
   }
 
+  &--blue {
+    background-color: var(--color-blue-400);
+    color: var(--color-white) !important;
+    border-color: var(--color-blue-400);
+
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-blue-400) !important;
+    }
+  }
+
   &--desktop {
     @include media(mobile-l) {
       display: none;

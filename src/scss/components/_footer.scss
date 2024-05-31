@@ -1,0 +1,26 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.footer {
+  .nav {
+    padding: clamp(40px, 4.2vw, 60px) 0;
+  }
+
+  &__wrapper {
+    @include flex-all-sb;
+    padding: 16px clamp(0px, 3.5vw, 50px);
+  }
+
+  &__items {
+    display: flex;
+    gap: 48px;
+  }
+
+  @include media(tablet) {
+    &__wrapper {
+      flex-direction: column;
+      gap: 16px;
+      padding: 16px 0;
+    }
+  }
+}

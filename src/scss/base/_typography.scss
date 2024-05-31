@@ -44,7 +44,7 @@ textarea {
   font-size: clamp(20px, 2vi, 24px);
   line-height: 1.22;
   letter-spacing: -0.002em;
-  color: var(--color-grey-400);
+  color: var(--color-blue-400);
 
   &::placeholder {
     color: var(--color-grey-400);
@@ -64,6 +64,7 @@ textarea {
 
   @include media(mobile-m) {
     line-height: 1.6;
+    text-align: center;
 
     br {
       display: block;
