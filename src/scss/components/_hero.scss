@@ -21,7 +21,7 @@
     z-index: 2;
     display: flex;
     flex-direction: column;
-    gap: 23px;
+    gap: clamp(23px, 10vw, 128px);
     max-width: clamp(45%, 45vw, 625px);
     width: 100%;
     margin-left: auto;
@@ -30,18 +30,29 @@
       margin-bottom: clamp(0px, 5vw, 70px);
     }
 
-    .desc {
-      margin-bottom: clamp(0px, 2.2vw, 31px);
-    }
-
     .btn {
       width: fit-content;
     }
   }
 
+  &--home {
+    .hero__content {
+      gap: 23px;
+    }
+
+    .desc {
+      margin-bottom: clamp(0px, 2.2vw, 31px);
+    }
+  }
+
   @include media(desktop) {
     &__inner {
+      min-height: 600px;
       background-position: 10% center;
+    }
+
+    &__content {
+      gap: 30px;
     }
   }
 

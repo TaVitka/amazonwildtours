@@ -27,6 +27,12 @@ body {
   &.open {
     overflow: hidden;
   }
+
+  &--home {
+    .accent .section__nav .btn {
+      display: block;
+    }
+  }
 }
 
 .container {
