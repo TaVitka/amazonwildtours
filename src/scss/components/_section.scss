@@ -8,6 +8,11 @@
     @include flex-all-sb;
     gap: 16px;
     margin-bottom: clamp(40px, 7vw, 100px);
+
+    &--left {
+      justify-content: flex-start;
+      gap: 16px clamp(40px, 7.4vw, 104px);
+    }
   }
 
   &__desc {

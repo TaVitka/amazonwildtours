@@ -43,7 +43,7 @@
   }
 
   &--explore {
-    padding: clamp(40px, 11vw, 146px) 0;
+    padding-top: clamp(40px, 11vw, 146px);
   }
 
   @include media(mobile-l) {
@@ -89,10 +89,14 @@
     }
 
     &__image {
-      img {
-        aspect-ratio: 4/2;
+      &:not(&--long) {
+        img {
+          aspect-ratio: 4/2;
+        }
+      }
 
-        &.bottom {
+      &--bottom {
+        img {
           object-position: bottom;
         }
       }
