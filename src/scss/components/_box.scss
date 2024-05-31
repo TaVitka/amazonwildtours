@@ -1,0 +1,73 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.box {
+  padding-top: clamp(40px, 7vw, 95px);
+
+  &__info {
+    @include flex-all-sb;
+    gap: clamp(40px, 7vw, 85px);
+    max-width: 1320px;
+    width: 100%;
+
+    &:not(:last-of-type) {
+      margin-bottom: clamp(40px, 9vw, 128px);
+    }
+
+    &--right {
+      margin-left: auto;
+
+      .box__image {
+        border-top-left-radius: var(--radius-main);
+        border-bottom-left-radius: var(--radius-main);
+      }
+    }
+
+    &--left {
+      flex-direction: row-reverse;
+
+      .box__image {
+        border-top-right-radius: var(--radius-main);
+        border-bottom-right-radius: var(--radius-main);
+      }
+    }
+  }
+
+  &__content {
+    h2 {
+      margin-bottom: 12px;
+    }
+  }
+
+  @include media(tablet-wide) {
+    &__image {
+      max-width: 50%;
+      width: 100%;
+      aspect-ratio: 4/2;
+    }
+  }
+
+  @include media(mobile-l) {
+    &__info {
+      flex-direction: column;
+
+      &--right {
+        .box__image {
+          border-top-left-radius: var(--radius-m);
+          border-bottom-left-radius: var(--radius-m);
+        }
+      }
+
+      &--left {
+        .box__image {
+          border-top-right-radius: var(--radius-m);
+          border-bottom-right-radius: var(--radius-m);
+        }
+      }
+    }
+
+    &__image {
+      max-width: 100%;
+    }
+  }
+}
