@@ -45,6 +45,12 @@
     }
   }
 
+  &--tours {
+    .hero__content {
+      gap: clamp(23px, 10vw, 104px)
+    }
+  }
+
   @include media(desktop) {
     &__inner {
       min-height: 600px;
