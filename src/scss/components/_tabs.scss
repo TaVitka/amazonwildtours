@@ -1,0 +1,47 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.tabs {
+  &__menu {
+    max-width: 93vw;
+    overflow-x: scroll;
+    margin-bottom: clamp(40px, 7vw, 100px);
+  }
+
+  &__nav {
+    @include flex-all-sb;
+    align-items: stretch;
+    position: relative;
+    gap: 16px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      height: 3px;
+      background-color: var(--color-grey-200);
+    }
+
+    li {
+      width: 100%;
+      height: auto;
+    }
+
+    span {
+      @include flex-all-center;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      padding: 11px 4px 6px;
+      border-bottom: 4px solid transparent;
+      transition: border-color 0.2s ease-in-out;
+
+      &.selected {
+        border-color: var(--color-blue-700);
+      }
+    }
+  }
+}

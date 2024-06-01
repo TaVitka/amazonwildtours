@@ -3,7 +3,8 @@
 
 h1,
 h2,
-h3 {
+h3,
+.title {
   font-weight: var(--fw-700);
   line-height: 1.2;
   letter-spacing: -0.024em;
@@ -31,6 +32,13 @@ h2 {
 
 h3 {
   font-size: clamp(20px, 2.3vi, 32px);
+}
+.title {
+  font-size: clamp(14px, 2.3vi, 32px);
+
+  @include media(mobile-l) {
+    font-weight: var(--fw-600);
+  }
 }
 
 p {

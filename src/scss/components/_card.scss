@@ -25,6 +25,12 @@
     padding-bottom: 24px;
   }
 
+  article {
+    @include flex-all-sb;
+    flex-direction: column;
+    height: 100%;
+  }
+
   &__image {
     border-top-left-radius: var(--radius-main);
     border-top-right-radius: var(--radius-main);
@@ -48,12 +54,20 @@
     h3 {
       margin-bottom: 20px;
     }
+
+    *:not(:last-child, h3) {
+      margin-bottom: 22px;
+    }
   }
 
   &__btns {
     @include flex-all-center;
-    flex-direction: column;
-    gap: 30px 0;
+    gap: 30px;
+
+    &:not(&--inline) {
+      flex-direction: column;
+    }
+
   }
 
   &__reviews,
@@ -153,6 +167,20 @@
     }
   }
 
+  &--tabs {
+    padding: clamp(30px, 10vw, 110px) 0;
+  }
+
+  @include media(tablet) {
+    &__btns {
+      width: 100%;
+
+      &--inline {
+        flex-direction: column;
+      }
+    }
+  }
+
   @include media(mobile-l) {
     &__items {
       grid-template-columns: repeat(2, 1fr);
@@ -172,7 +200,8 @@
     }
 
     &__image {
-      border-radius: var(--radius-m);
+      border-top-left-radius: var(--radius-m);
+      border-top-right-radius: var(--radius-m);
     }
 
     .btn {
