@@ -2,8 +2,6 @@
 @use "../utils/mixins/"as*;
 
 .box {
-  padding-top: clamp(40px, 7vw, 95px);
-
   &__info {
     @include flex-all-sb;
     gap: clamp(40px, 7vw, 85px);
@@ -37,6 +35,10 @@
     h2 {
       margin-bottom: 12px;
     }
+  }
+
+  &--overview {
+    padding-block: clamp(40px, 7vw, 95px) clamp(40px, 7vw, 62px);
   }
 
   @include media(tablet-wide) {

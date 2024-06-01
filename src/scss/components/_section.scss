@@ -20,6 +20,12 @@
     width: 100%;
   }
 
+  &--team {
+    .section__desc {
+      max-width: 704px;
+    }
+  }
+
   @include media(tablet) {
     &__nav {
       flex-direction: column;
