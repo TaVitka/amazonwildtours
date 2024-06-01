@@ -4,7 +4,8 @@
 h1,
 h2,
 h3,
-.title {
+.title,
+summary {
   font-weight: var(--fw-700);
   line-height: 1.2;
   letter-spacing: -0.024em;
@@ -30,7 +31,8 @@ h2 {
   font-size: clamp(26px, 3.4vi, 48px);
 }
 
-h3 {
+h3,
+summary {
   font-size: clamp(20px, 2.3vi, 32px);
 }
 .title {
