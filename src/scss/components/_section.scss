@@ -2,7 +2,7 @@
 @use "../utils/mixins/"as*;
 
 .section {
-  padding: clamp(40px, 7vw, 100px) 0;
+  padding: clamp(30px, 7vw, 100px) 0;
 
   &__nav {
     @include flex-all-sb;
