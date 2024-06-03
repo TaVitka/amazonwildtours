@@ -6,6 +6,11 @@
     display: grid;
     gap: 30px clamp(16px, 2.2vw, 30px);
 
+    &--one {
+      grid-template-columns: 1fr;
+      gap: clamp(30px, 7vw, 100px) clamp(16px, 2.2vw, 30px);
+    }
+
     &--two {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -178,6 +183,17 @@
     }
   }
 
+  &__wrapper {
+    @include flex-sb;
+    gap: clamp(16px, 2.2vw, 30px);
+    width: 100%;
+    padding-inline: clamp(10px, 1.4vw, 20px);
+
+    .card__content {
+      padding-inline: 0;
+    }
+  }
+
   &--explore {
     padding-top: clamp(40px, 11vw, 146px);
   }
@@ -200,11 +216,24 @@
         flex-direction: column;
       }
     }
+
+    &__wrapper {
+      flex-direction: column;
+      padding: 0;
+
+      .card__btns {
+        align-items: flex-start;
+      }
+    }
   }
 
   @include media(mobile-l) {
     &__items {
       grid-template-columns: repeat(2, 1fr);
+
+      &--one {
+        grid-template-columns: 1fr;
+      }
 
       &--three {
         .card__item {
