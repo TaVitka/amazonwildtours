@@ -35,8 +35,9 @@ h3,
 summary {
   font-size: clamp(20px, 2.3vi, 32px);
 }
+
 .title {
-  font-size: clamp(14px, 2.3vi, 32px);
+  font-size: clamp(20px, 2.3vi, 32px);
 
   @include media(mobile-l) {
     font-weight: var(--fw-600);

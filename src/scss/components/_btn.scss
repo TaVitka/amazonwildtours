@@ -57,4 +57,35 @@
       display: block;
     }
   }
+
+  &--back {
+    position: relative;
+    padding-left: 66px;
+
+    &::before {
+      @include cover-background;
+      content: "";
+      position: absolute;
+      left: 32px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      background-image: url("../images/icons/arrow-icon.svg");
+      transition: filter 0.2s ease-in-out;
+      filter: brightness(0) saturate(100%) invert(98%) sepia(100%) saturate(4936%) hue-rotate(64deg) brightness(86%) contrast(86%);
+    }
+
+    &:hover::before {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(10%) saturate(7490%) hue-rotate(175deg) brightness(103%) contrast(95%);
+    }
+
+    @include media(mobile-l) {
+      padding-left: 44px;
+
+      &::before {
+        left: 6px;
+      }
+    }
+  }
 }
