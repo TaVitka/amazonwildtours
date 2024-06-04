@@ -28,6 +28,7 @@
     li {
       width: 100%;
       height: auto;
+      cursor: pointer;
     }
 
     span {
@@ -43,5 +44,9 @@
         border-color: var(--color-blue-700);
       }
     }
+  }
+
+  &__btn {
+    font-size: clamp(14px, 2.3vi, 32px);
   }
 }

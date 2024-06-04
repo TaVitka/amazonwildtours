@@ -184,7 +184,8 @@
       }
     }
 
-    &__info--accent {
+    &__info--accent,
+    &__info--bordered {
       .box__image {
         max-width: 100%;
       }
