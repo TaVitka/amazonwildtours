@@ -240,9 +240,14 @@
           &:last-of-type {
             grid-column: span 2;
 
-            img {
+            .card__image:not(.card__image--long) img {
               aspect-ratio: 4 / 2;
               object-position: bottom;
+            }
+
+            .card__image--long img {
+              aspect-ratio: 3 / 2;
+              object-position: center;
             }
           }
         }
@@ -257,10 +262,6 @@
           box-shadow: none;
         }
       }
-    }
-
-    article {
-      justify-content: flex-start;
     }
 
     &__image {
