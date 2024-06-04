@@ -51,6 +51,23 @@
     }
   }
 
+  &--reverse {
+    .hero__inner {
+      background-position: 96% 57%;
+    }
+
+    .hero__content {
+      margin-inline: 0 auto;
+    }
+  }
+
+  &--wildlife {
+    .hero__content {
+      justify-content: space-between;
+      min-height: 610px;
+    }
+  }
+
   @include media(desktop) {
     &__inner {
       min-height: 600px;
@@ -59,6 +76,12 @@
 
     &__content {
       gap: 30px;
+    }
+
+    &--wildlife {
+      .hero__content {
+        min-height: auto;
+      }
     }
   }
 
